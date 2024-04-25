@@ -384,8 +384,8 @@ body.nav-active { overflow: hidden; }
 }
 
 .hero-banner .w-100 {
-  mask-image: url("Blob.svg");
-  -webkit-mask-image: url("Blob.svg"); /* Corrected from "Blog.svg" */
+  mask-image: url("Blog.svg");
+  -webkit-mask-image: url("Blog.svg"); /* Corrected from "Blog.svg" */
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
   mask-position: center;
