@@ -361,8 +361,14 @@ body.nav-active { overflow: hidden; }
   #HERO
 \*-----------------------------------*/
 
+:root {
+  --section-padding: 20px; /* Define your variable values */
+  --cultured: #f5f5f5;
+  --shadow-2: 0 4px 6px rgba(0, 0, 0, 0.1); /* Define your shadow value */
+}
+
 .hero {
-  padding-block-start: calc(var(--section-padding) + 50px);
+  padding-top: calc(var(--section-padding) + 50px);
   background-color: var(--cultured);
 }
 
@@ -379,7 +385,7 @@ body.nav-active { overflow: hidden; }
 
 .hero-banner .w-100 {
   mask-image: url("Blob.svg");
-  -webkit-mask-image: url("Blog.svg");
+  -webkit-mask-image: url("Blob.svg"); /* Corrected from "Blog.svg" */
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
   mask-position: center;
@@ -395,9 +401,13 @@ body.nav-active { overflow: hidden; }
   filter: drop-shadow(var(--shadow-2));
 }
 
-.hero-content { text-align: center; }
+.hero-content {
+  text-align: center;
+}
 
-.hero .section-text { margin-block: 24px 36px; }
+.hero .section-text {
+  margin-block: 24px 36px;
+}
 
 .btn-wrapper {
   display: flex;
@@ -406,6 +416,7 @@ body.nav-active { overflow: hidden; }
   align-items: center;
   gap: 12px;
 }
+
 
 
 
